@@ -2,7 +2,7 @@
 
 This is used to practice the Mongoose operation 
 ```
-git clone https://github.com/skyrisen/InstructorInfo.git
+git clone https://github.com/skyrisen/mongooseInstructor.git
 cd InstructorInfo
 npm install
 ```
