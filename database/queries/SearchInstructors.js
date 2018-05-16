@@ -13,21 +13,3 @@ module.exports = (criteria, sortProperty, offset = 0, limit = 20) => {
  
 };
 
-
-const buildCriteria = (criteria) => {
-  const query = {};
-  console.log(criteria)
-
-  if (criteria.name) {
-    query.$text = { $search: criteria.name }
-  }
-  if (criteria.age) {
-    query.age = {
-      $gte: criteria.age.min,
-      $lte: criteria.age.max
-    }
-  }
-
-  return query;
-
-}

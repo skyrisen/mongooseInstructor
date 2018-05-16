@@ -21,7 +21,7 @@ const App = () => {
   );
 };
 
-const db = new Db('upstar_music', new Server('localhost', 27017));
+const db = new Db('instructor_info', new Server('localhost', 27017));
 db.open()
   .then(() => {
     window.db = db;
