@@ -7,7 +7,8 @@ const Instructor = require('../models/instructor');
  * @param {integer} offset How many records to skip in the result set
  * @param {integer} limit How many records to return in the result set
  * @return {promise} A promise that resolves with the instructors, count, offset, and limit
- */
+   return result will be { all: [instructors], count:count, offset:offset, limit:limit }
+*/]
 module.exports = (criteria, sortProperty, offset = 0, limit = 20) => {
 
  

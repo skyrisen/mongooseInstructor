@@ -28,7 +28,6 @@ class InstructorDetail extends Component {
     if (!courses || !courses.map) { return; }
 
     return courses.map(course => {
-      console.log(course)
       return (
         <div className="card album" key={course.title}>
           <div className="card-image">
